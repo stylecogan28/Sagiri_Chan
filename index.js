@@ -20,9 +20,9 @@ const instagram = 'www.instagram.com/Cogan_112';
 const aktif = 'tergantung kuota';
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:Stylecogan28\n' // Nama kamu
+            + 'FN:StyleCogan28\n' // Nama kamu
             + 'ORG:Sagiri Chan;\n' // Nama bot
-            + 'TEL;type=CELL;type=VOICE;waid=6280000000000:+62 895-0993-8750\n' //Nomor whatsapp kamu
+            + 'TEL;type=CELL;type=VOICE;waid=6289509938750:+62 895-0993-8750\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 const
 {
