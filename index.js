@@ -1408,12 +1408,6 @@ Silakan pilih :
 *Selesaikan perintah untuk melakukan TOD selanjutnya* ⚠️` ,MessageType.text, {quoted: m});
 }
 
-//Hay gay
-//create @mrf.zvx don't delate this please
-	
-})
-
-
 else if (text == 'assalamualaikum'){
 conn.sendMessage(id, '3aalaikumsalam, sayang, mau apa? .menu/.info/.donasi atau mau sagiri👀' ,MessageType.text);
 }
