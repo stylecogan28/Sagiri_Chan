@@ -1208,8 +1208,8 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.tex
 }
 if (text.includes(".arti")){
 const teks = text.replace(/.arti /, "")
-axios.get(`https://arugaz.herokuapp.com/api/artinama?nama=${teks}`).then((res) => {
-    let hasil = `*Arti dari namanu adalah*\n\n    *${teks}* ${res.data.result}`;
+axios.get(`https://api.i-tech.id/tools/arti?key=Zllo81-cQHtUN-qEyAJq-FUlM1z-oKSynl&nama=${teks}`).then((res) => {
+    let hasil = `*Arti dari namamu adalah*\n\n    *${teks}* ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text, { quoted: m } );
 })
 }
