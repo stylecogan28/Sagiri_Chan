@@ -1404,24 +1404,3 @@ Silakan pilih :
 
 *Selesaikan perintah untuk melakukan TOD selanjutnya* ⚠️` ,MessageType.text, {quoted: m});
 }
-else if (text == 'assalamualaikum'){
-conn.sendMessage(id, '3aalaikumsalam, sayang, mau apa? .menu/.info/.donasi atau mau sagiri👀' ,MessageType.text);
-}
-else if (text == 'salam'){
-conn.sendMessage(id, 'Waalaikumsalam, Ketik .menu/.info/.donasi Contoh .menu' ,MessageType.text);
-}
-else if (text == 'asalamualaikum'){
-conn.sendMessage(id, 'Waalaikumsalam, sayang, mau apa? .menu/.info/.donasi atau mau sagiri👀' ,MessageType.text);
-}
-else if (text == 'Assalamualaikum'){
-conn.sendMessage(id, 'Waalaikumsalam sayang, mau apa? .menu/.info/.donasi atau mau sagiri👀' ,MessageType.text);
-}
-else if (text == 'p'){
-conn.sendMessage(id, 'Ya?, sayang, mau apa? .menu/.info/.donasi atau mau sagiri👀' ,MessageType.text);
-}
-else if (text == 'P'){
-conn.sendMessage(id, 'Ya?, sayang, mau apa? .menu/.info/.donasi atau mau sagiri👀' ,MessageType.text);
-}
-else if (text == 'Halo'){
-conn.sendMessage(id, 'Ya?, sayang, mau apa? .menu/.info/.donasi atau mau sagiri👀' ,MessageType.text);
-}
