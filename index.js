@@ -351,19 +351,16 @@ conn.sendMessage(id, `PONG!!\n_Speed : ${latensi.toFixed(4)} Second_`, MessageTy
 }
 
   //Nulis dibuku
-if (text.includes('.Nulis')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
-}
-if (text.includes('.nulis')){
-  const teks = text.replace(/.nulis /, '')
-    axios.get(`https://st4rz.herokuapp.com/api/nulis?text=${teks}`)
+if (text.includes('#nulis')){
+  var teks = text.replace(/#nulis /, '')
+    axios.get('https://bangandre.herokuapp.com/nulis?teks='+teks)
     .then((res) => {
       imageToBase64(res.data.result)
         .then(
           (ress) => {
-            conn.sendMessage(id, '[ WAIT ] Menulis ⏳ silahkan tunggu', MessageType.text, { quoted: m } )
+            conn.sendMessage(id, '[WAIT] Searching...', MessageType.text)
             var buf = Buffer.from(ress, 'base64')
-            conn.sendMessage(id, buf ,MessageType.image, { quoted: m } )
+            conn.sendMessage(id, buf, MessageType.image)
         })
     })
 }
